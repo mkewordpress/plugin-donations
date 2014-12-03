@@ -1906,6 +1906,14 @@
     {
     "ProjRelPath" = "T"
     }
+    "wp-content\\plugins\\urban-donations-manager"
+    {
+    "ProjRelPath" = "T"
+    }
+    "wp-content\\plugins\\urban-donations-manager\\class-urban-donations-manager.php"
+    {
+    "ProjRelPath" = "T"
+    }
     "wp-content\\themes"
     {
     "ProjRelPath" = "T"

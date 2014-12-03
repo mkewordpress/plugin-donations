@@ -1,0 +1,4 @@
+ UrbanMilwaukee.plugin.donations.intellisense.cache | Bin [31m1008676[m -> [32m1008006[m bytes
+ UrbanMilwaukee.plugin.donations.phpproj            |   8 [32m++[m
+ wp-content/plugins/hello.php                       |  82 [31m---------------------[m
+ 3 files changed, 8 insertions(+), 82 deletions(-)
