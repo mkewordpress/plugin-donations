@@ -1,7 +1,7 @@
 <?php
 	
 	/**
-	 * This is class Urban_Model_Donation
+	 * Urban_Model_Donation - WordPress Custom Post Type Model
 	 *
 	 * @author Rocky Chronister <rocky@hyperiondesigned.com>
 	 * @copyright 2014 Rocky Chronister
@@ -31,7 +31,19 @@
 			$this->error_message					= "";
 		
 			$this->template_parser					= $template_parser;
-		
+			
+			/**
+			 * Add WordPress Event Handlers
+			 * 
+			 * @tutorial http://codex.wordpress.org/Plugin_API/Action_Reference#Post.2C_Page.2C_Attachment.2C_and_Category_Actions_.28Admin.29
+			 * 
+			 * @see http://codex.wordpress.org/Function_Reference/add_action
+			 * @see https://developer.wordpress.org/reference/functions/add_action/
+			 * @see https://developer.wordpress.org/reference/hooks/
+			 * 
+			 * 
+			 */
+			
 			add_action( 'init', array( $this, 'create_donations_post_type' ) );
 		
 			add_action( 'init', array( $this, 'create_donations_custom_taxonomies' ) );
@@ -48,7 +60,8 @@
 		 *
 		*/
 		
-		public function create_donations_post_type(){
+		public function create_donations_post_type()
+		{
 			// Configure the Post Type
 				// Build array of label options. Used in $args['labels'].
 				$labels = array(
@@ -104,7 +117,8 @@
 		 *
 		 */	
 	
-		public function create_donations_custom_taxonomies(){
+		public function create_donations_custom_taxonomies()
+		{
 			/**
 			 * 	Reporting Period WordPress Taxonomy
 			*/
@@ -141,6 +155,6 @@
 	public function save_donation_meta_data(){}
 	public function generate_donation_messages(){}
 	
-}
+	}
 	
 ?>
